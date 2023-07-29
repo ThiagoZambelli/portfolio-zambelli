@@ -1,0 +1,72 @@
+@import 'styles/_variaveis.module.scss';
+
+.project{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;   
+    row-gap: 2rem;
+    cursor: pointer;
+    opacity: .9;
+    transition: .5s;
+        &:hover{
+            opacity: 1;
+        }
+
+    img{
+        border-radius: 10px;        
+    }
+    &__body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+        
+        
+        &__nome{
+            font-family: $fontTexto;
+            font-size: 1.6rem;
+            width: 300px;
+            text-align: center;
+            line-height: 1.5em;
+            padding: 1em;
+        }
+
+        &__botoes{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 2rem;
+
+            a{
+                display: flex;
+                align-items: center;
+                column-gap: 1em;
+                justify-content: center;
+                font-size: 1rem;
+                text-decoration: none;
+                border-radius: 12px;
+                padding: .5em 1em;
+                transition: .5s;
+            }
+
+            &__deploy{
+                color: $branco;
+                background-color: $colorSecundaria-1;
+                &:hover{
+                    background-color: $colorSecundaria-2;
+                    transform: scale(1.01);
+                }
+            }
+
+            &__git{
+                color: $branco;
+                background-color: $preto;
+                &:hover{
+                    transform: scale(1.01);
+                }
+            }
+        }
+    }
+}
