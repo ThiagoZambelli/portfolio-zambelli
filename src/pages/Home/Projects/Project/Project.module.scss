@@ -9,6 +9,8 @@
     row-gap: 2rem;    
     cursor: pointer;
     opacity: .9;
+
+    box-shadow: 0 0 3px $preto;
     transition: .5s;
         &:hover{
             opacity: 1;
@@ -16,7 +18,7 @@
 
     img{
         border-radius: 10px; 
-        max-width: 85%;       
+        max-width: 90%;       
     }
     &__body{
         display: flex;
