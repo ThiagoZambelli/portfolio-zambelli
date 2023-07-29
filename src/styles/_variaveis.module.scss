@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'teck-font';
+    src: url('/fonts/teck-font/TrenchThin-aZ1J.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$fontTeck: 'teck-font', Arial;
+$fontTexto:'Montserrat', sans-serif;
+
+// Cores
+$colorPrincipal:#393E46;
+    $colorPrincipal-1:#A9B9D1;
+    $colorPrincipal-2:#768091;
+    $colorPrincipal-3:#424852;
+    $colorPrincipal-4:#292D33;
+
+$colorSecundaria: #32E0C4;
+    $colorSecundaria-1: #23A18C;
+    $colorSecundaria-2: #156154;
+    $colorSecundaria-3: #34EDCE;
+    $colorSecundaria-4: #2CC7AD;
+
+$branco: #fff;
+$color-bg-home: #F2F2F2;

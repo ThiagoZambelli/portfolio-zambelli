@@ -1,0 +1,19 @@
+@import 'styles/_variaveis.module.scss';
+
+.home {
+    background-color: $color-bg-home;
+    padding: 130px 0 0 0;
+
+    &__conteudo{
+        padding: 0 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .home {
+        padding-top: 150px;
+    }
+}

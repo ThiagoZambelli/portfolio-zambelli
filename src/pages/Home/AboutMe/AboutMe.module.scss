@@ -1,0 +1,35 @@
+@import 'styles/_variaveis.module.scss';
+
+.aboutme{
+    display: flex;
+    flex-direction: column;
+    font-family: $fontTexto;
+    align-items: center;
+    justify-content: center; 
+    width: 100%;   
+    
+    &__header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 4rem 0;
+        
+        max-width: 700px;
+
+        h3{
+            text-align: center;
+            font-size: 1.3rem;
+            line-height: 1.5em;
+            opacity: .8;
+        }
+    }
+    &__body{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+        row-gap: 2rem;
+        column-gap: 2rem;
+        flex-wrap: wrap;
+    }
+}
