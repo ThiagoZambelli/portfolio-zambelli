@@ -6,8 +6,7 @@
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;   
-    row-gap: 2rem;
-    box-shadow: 0 0 6px $preto;
+    row-gap: 2rem;    
     cursor: pointer;
     opacity: .9;
     transition: .5s;
@@ -16,7 +15,8 @@
         }
 
     img{
-        border-radius: 10px;        
+        border-radius: 10px; 
+        max-width: 85%;       
     }
     &__body{
         display: flex;
