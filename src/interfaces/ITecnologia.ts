@@ -1,5 +1,5 @@
 export default interface ITecnologia {
-    id: string,
+    _id: string,
     nome: string,
     titulo: string,
     descricao: string,

@@ -38,6 +38,12 @@
                 svg {
                     font-size: 2rem;
                     color: $colorSecundaria;
+                    transition: .5s;
+
+                    &:hover{
+                        transform: scale(1.5);
+                        filter: drop-shadow(0 0 3px $colorSecundaria);
+                    }
                 }
             }
 
