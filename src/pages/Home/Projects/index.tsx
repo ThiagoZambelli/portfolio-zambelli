@@ -24,7 +24,7 @@ function Projects() {
             </header>
             <div className={styles.projetos__body}>
                 {projetos.map(projeto => (
-                    <Project key={projeto.id} {...projeto} />
+                    <Project key={projeto.nome} {...projeto} />
                 ))}
 
             </div>

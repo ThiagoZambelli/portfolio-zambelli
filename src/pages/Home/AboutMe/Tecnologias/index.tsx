@@ -20,7 +20,7 @@ function Tecnologias() {
             <h2>My known technologies.</h2>
             <div className={styles.tecnologias__cards}>
                 {tecnologias.map(e => (
-                    <TecnologiasCard key={e.id} {...e} />
+                    <TecnologiasCard key={e.nome} {...e} />
                 )
                 )}
             </div>
