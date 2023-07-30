@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './NavHeader.module.scss';
 import foto from 'assets/minhaFoto.png';
-import { Link } from 'react-router-dom';
+import { Link as LinkRouter } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 import { RiMenu5Fill, RiMenu4Line } from 'react-icons/ri';
 
@@ -19,12 +19,12 @@ function NavHeader() {
         <img src={foto} alt='Minha foto' />
         <p>Thiago Zambelli de Oliveira</p>
       </h1>
-      {isMobile && <button onClick={abrirMenu}>{menuAberto ? <RiMenu4Line /> : <RiMenu5Fill />}</button>}
+      {isMobile && <button onClick={abrirMenu}>{menuAberto ? <RiMenu4Line color='#32E0C4' /> : <RiMenu5Fill />}</button>}
       <nav className={menuAberto && isMobile ? styles.menuEscondido : ""}>
-        <Link to='/'>Home</Link>
-        <a href='#about'>About</a>
-        <a href='#projects'>Projects</a>
-        <a href='#contact'>Contact</a>
+        <LinkRouter onClick={abrirMenu} to='/'>Home</LinkRouter>
+        <a onClick={abrirMenu} href='#about'>About</a>
+        <a onClick={abrirMenu} href='#projects'>Projects</a>
+        <a onClick={abrirMenu} href='#contact'>Contact</a>
       </nav>
     </header>
   )

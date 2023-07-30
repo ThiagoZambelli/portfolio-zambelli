@@ -73,17 +73,19 @@
             position: absolute;
             right: 20px;
             align-items: center;
-            top: 150px;
+            top: 130px;
             column-gap: 1em;
             display: flex;
             flex-direction: column;
-            row-gap: 1em;
+            row-gap: .5em;
 
             a{
                 background-color: $colorPrincipal-1;
                 padding: .2em .5em;
                 border-radius: 1em;
                 opacity: .8;
+                width: 120px;
+                box-shadow: 0 0 6px $preto;
             }
 
         }

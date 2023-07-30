@@ -9,8 +9,7 @@
     row-gap: 2rem;    
     cursor: pointer;
     opacity: .9;    
-    transition: .5s;
-    margin: 2rem 0;
+    transition: .5s;   
         &:hover{
             opacity: 1;
         }
@@ -69,6 +68,11 @@
                     transform: scale(1.01);
                 }
             }
+        }
+
+        &__dash{
+            font-size: 6rem;
+            color: $colorSecundaria;
         }
     }
 }

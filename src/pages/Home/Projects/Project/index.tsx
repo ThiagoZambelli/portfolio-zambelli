@@ -2,8 +2,9 @@ import React from 'react'
 import styles from './Project.module.scss';
 import IProjeto from 'interfaces/IProjetos';
 import { Link } from 'react-router-dom';
-import {AiOutlineDeploymentUnit, AiFillGithub} from 'react-icons/ai';
+import { AiOutlineDeploymentUnit, AiFillGithub, AiOutlineLine } from 'react-icons/ai';
 import usePegaImagem from './hook/usePegaImagem';
+
 
 
 function Project(projeto: IProjeto) {
@@ -34,6 +35,7 @@ function Project(projeto: IProjeto) {
             <AiFillGithub />
           </Link>
         </div>
+        <AiOutlineLine className={styles.project__body__dash} />
       </div>
     </section>
   )
