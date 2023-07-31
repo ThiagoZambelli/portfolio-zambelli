@@ -4,6 +4,7 @@ import Titulo from 'components/Titulo';
 import IProjeto from 'interfaces/IProjetos';
 import { getProjetos } from 'services/projetos';
 import Project from './Project';
+import Loader from 'components/Loader';
 
 function Projects() {
     const [projetos, setProjetos] = useState<IProjeto[]>([]);
@@ -23,10 +24,9 @@ function Projects() {
                 <h3>In this section, you will find a selection of my personal and study projects, demonstrating my journey of continuous professional improvement. They reflect my commitment to developing technical and creative skills.</h3>
             </header>
             <div className={styles.projetos__body}>
-                {projetos.map(projeto => (
+                {projetos.length > 0 ? projetos.map(projeto => (
                     <Project key={projeto.nome} {...projeto} />
-                ))}
-
+                )) : <Loader />}
             </div>
         </section>
     )

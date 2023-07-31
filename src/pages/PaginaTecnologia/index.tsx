@@ -4,6 +4,7 @@ import { useLocation } from 'react-router-dom';
 import { getTecnologia } from 'services/tecnologias';
 import ITecnologia from 'interfaces/ITecnologia';
 import { IoIosArrowForward, IoIosArrowBack } from 'react-icons/io';
+import NotFoud from 'pages/NotFound';
 
 function PaginaTecnologia() {
   const paginaAtual = useLocation()
@@ -26,16 +27,16 @@ function PaginaTecnologia() {
   }
 
   return (
-    <section className={styles.paginaTecnologia}>
-      <section className={styles.paginaTecnologia__header}>
-        <img src={tecnologia?.imagem} alt={`Logo do(a) ${tecnologia?.nome}`} />
-        <h2 style={estilo}>{tecnologia?.nome}</h2>
-      </section>
-      <section className={styles.paginaTecnologia__body}>
-        <h3 style={estilo}><IoIosArrowForward />{tecnologia?.titulo}<IoIosArrowBack /></h3>
-        <p>{tecnologia?.descricao}</p>
-      </section>
+    tecnologia ? <section className={styles.paginaTecnologia}>
+    <section className={styles.paginaTecnologia__header}>
+      <img src={tecnologia?.imagem} alt={`Logo do(a) ${tecnologia?.nome}`} />
+      <h2 style={estilo}>{tecnologia?.nome}</h2>
     </section>
+    <section className={styles.paginaTecnologia__body}>
+      <h3 style={estilo}><IoIosArrowForward />{tecnologia?.titulo}<IoIosArrowBack /></h3>
+      <p>{tecnologia?.descricao}</p>
+    </section>
+  </section> : <NotFoud />
   )
 }
 
