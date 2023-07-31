@@ -1,0 +1,54 @@
+@import 'styles/_variaveis.module.scss';
+
+.contatos {
+    &__body {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        font-family: $fontTexto;
+
+        a {
+            text-decoration: none;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            row-gap: 1em;
+
+            h3 {
+                font-size: 2rem;
+                padding: 1em 0;
+                font-weight: 600;
+
+            }
+
+            a,
+            strong,
+            p {
+                font-size: 1.1rem;
+                display: flex;
+                align-items: center;
+                column-gap: 1em;
+            }
+
+            a,
+            p {
+                color: $colorSecundaria-2 ;
+                cursor: pointer;
+
+                &:hover {
+                    color: $colorSecundaria-1;
+                    filter: drop-shadow(0 0 6px $colorSecundaria);
+                }
+            }
+
+            strong {
+                font-weight: 600;
+            }
+
+        }
+    }
+}
