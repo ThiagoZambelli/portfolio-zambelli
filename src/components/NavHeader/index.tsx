@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
 import styles from './NavHeader.module.scss';
 import foto from 'assets/minhaFoto.png';
-import { Link as LinkRouter } from 'react-router-dom';
+import { Link as LinkRouter, useLocation } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 import { RiMenu5Fill, RiMenu4Line } from 'react-icons/ri';
 
 function NavHeader() {
   const [menuAberto, setMenuAberto] = useState(false);
   const isMobile = useMediaQuery({ query: '(max-width: 860px)' });
+  const paginaAtual = useLocation();
+
+  const home = paginaAtual.pathname === "/";
 
   const abrirMenu = () => {
     setMenuAberto(!menuAberto)
@@ -22,8 +25,8 @@ function NavHeader() {
       {isMobile && <button onClick={abrirMenu}>{menuAberto ? <RiMenu4Line color='#32E0C4' /> : <RiMenu5Fill />}</button>}
       <nav className={menuAberto && isMobile ? styles.menuEscondido : ""}>
         <LinkRouter onClick={abrirMenu} to='/'>Home</LinkRouter>
-        <a onClick={abrirMenu} href='#about'>About</a>
-        <a onClick={abrirMenu} href='#projects'>Projects</a>
+        {home && <a onClick={abrirMenu} href='#about'>About</a>}
+        {home && <a onClick={abrirMenu} href='#projects'>Projects</a>}
         <a onClick={abrirMenu} href='#contact'>Contact</a>
       </nav>
     </header>

@@ -7,7 +7,7 @@ function TecnologiasCard(tecnologia: ITecnologia) {
 
   const ir = useNavigate();
   const irParaPaginaDeTecnologia = (id: string) => {
-    ir(`/${id}`);
+    ir(`/tecnologia/${id}`);
   }
 
   return (

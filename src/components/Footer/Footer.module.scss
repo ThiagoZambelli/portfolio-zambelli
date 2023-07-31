@@ -11,11 +11,11 @@
         display: flex;
         width: 100%;
         flex-wrap: wrap;
-        justify-content: space-between;        
+        justify-content: space-between;
 
         div {
             padding: 2rem;
-            max-width: 50%;
+            max-width: 500px;
 
             h3 {
                 font-size: 1.6rem;
@@ -28,7 +28,7 @@
             p {
                 font-family: $fontTexto;
                 font-size: 1rem;
-                line-height: 2em;                              
+                line-height: 2em;
             }
 
             a {
@@ -40,7 +40,7 @@
                     color: $colorSecundaria;
                     transition: .5s;
 
-                    &:hover{
+                    &:hover {
                         transform: scale(1.5);
                         filter: drop-shadow(0 0 3px $colorSecundaria);
                     }
@@ -57,5 +57,11 @@
         justify-content: center;
         height: 50px;
         border-top: 2px solid $colorPrincipal-3;
+
+        p {
+            display: flex;
+            align-items: center;
+            column-gap: 1em;
+        }
     }
 }
