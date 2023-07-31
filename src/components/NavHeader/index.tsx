@@ -27,7 +27,7 @@ function NavHeader() {
         <LinkRouter onClick={abrirMenu} to='/'>Home</LinkRouter>
         {home && <a onClick={abrirMenu} href='#about'>About</a>}
         {home && <a onClick={abrirMenu} href='#projects'>Projects</a>}
-        <a onClick={abrirMenu} href='#contact'>Contact</a>
+        <LinkRouter onClick={abrirMenu} to='/contact'>Contact</LinkRouter>
       </nav>
     </header>
   )

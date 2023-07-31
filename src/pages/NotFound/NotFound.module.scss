@@ -1,0 +1,33 @@
+@import 'styles/_variaveis.module.scss';
+
+.notFound{
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $color-bg-home;
+
+    img{
+        max-height: 400px;
+        max-width: 90%;
+    }
+    
+    button{
+        font-family: $fontTexto;
+        border: none;
+        border-radius: 10px;
+        background-color: $colorSecundaria-2;
+        color: $branco;
+        padding: .3em .5em;
+        font-size: 2rem;
+        cursor: pointer;
+        transition: .5s;
+        &:hover{
+            background-color: $colorSecundaria;
+            filter: drop-shadow(0 0 12px $colorPrincipal-1);
+        }
+    }
+}

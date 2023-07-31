@@ -1,0 +1,13 @@
+@import 'styles/_variaveis.module.scss';
+
+.contact {
+
+    background-color: $color-bg-home;
+    padding: 130px 0 0 0;
+}
+
+@media screen and (max-width: 860px) {
+    .contact {
+        padding-top: 150px;
+    }
+}
