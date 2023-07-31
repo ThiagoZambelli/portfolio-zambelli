@@ -1,0 +1,16 @@
+@import "styles/_variaveis.module.scss";
+
+.moreInformation{
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 2rem;
+
+    &__body{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 2rem;
+        column-gap: 2rem;
+    }
+}

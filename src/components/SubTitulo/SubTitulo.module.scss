@@ -1,0 +1,16 @@
+@import 'styles/_variaveis.module.scss';
+
+.subTitulo {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: .5em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $fontTeck;
+    margin: 1em 0 0 0;
+
+    svg {
+        color: $colorSecundaria;
+    }
+}

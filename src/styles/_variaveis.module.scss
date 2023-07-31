@@ -8,24 +8,25 @@
 }
 
 $fontTeck: 'teck-font', Arial;
-$fontTexto:'Montserrat', sans-serif;
+$fontTexto: 'Montserrat', sans-serif;
 
 
 
 // Cores
-$colorPrincipal:#393E46;
-    $colorPrincipal-1:#A9B9D1;
-    $colorPrincipal-2:#768091;
-    $colorPrincipal-3:#424852;
-    $colorPrincipal-4:#292D33;
+$colorPrincipal: #393E46;
+$colorPrincipal-1: #A9B9D1;
+$colorPrincipal-2: #768091;
+$colorPrincipal-2-trasparente: rgba(118, 128, 145, .2);
+$colorPrincipal-3: #424852;
+$colorPrincipal-4: #292D33;
 
 $colorSecundaria: #32E0C4;
-    $colorSecundaria-1: #23A18C;
-    $colorSecundaria-2: #156154;
-    $colorSecundaria-3: #34EDCE;
-    $colorSecundaria-4: #2CC7AD;
+$colorSecundaria-1: #23A18C;
+$colorSecundaria-2: #156154;
+$colorSecundaria-3: #34EDCE;
+$colorSecundaria-4: #2CC7AD;
 
 $branco: #fff;
-$preto:#000;
-    $preto-trasparente: rgba(0, 0 ,0, .08);
+$preto: #000;
+$preto-trasparente: rgba(0, 0, 0, .08);
 $color-bg-home: #F2F2F2;
