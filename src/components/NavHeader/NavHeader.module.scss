@@ -17,12 +17,30 @@
         column-gap: 1em;
 
         a {
+            position: relative;
             text-decoration: none;
             cursor: pointer;
             font-size: 1.5rem;
             color: $colorPrincipal;
             font-weight: bold;
             transition: .5s;
+
+            &:before {
+                content: '';
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                width: 100%;
+                height: 2px;
+                background-color: $colorSecundaria;
+                transform-origin: center;
+                transform: translate(-50%, 0) scaleX(0);
+                transition: transform 0.3s ease-in-out;
+            }
+
+            &:hover::before {
+                transform: translate(-50%, 0) scaleX(1);
+            }
 
             &:hover {
                 color: $colorSecundaria;
@@ -79,13 +97,17 @@
             flex-direction: column;
             row-gap: .5em;
 
-            a{
+            a {
                 background-color: $colorPrincipal-1;
                 padding: .2em .5em;
                 border-radius: 1em;
                 opacity: .8;
                 width: 120px;
                 box-shadow: 0 0 6px $preto;
+
+                &:before {
+                    display: none;
+                }
             }
 
         }
