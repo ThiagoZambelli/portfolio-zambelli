@@ -1,32 +1,35 @@
-import img22 from '../../assets/22.svg'
-import img25 from '../../assets/25.svg'
-import img27 from '../../assets/27.svg'
-import img31 from '../../assets/31.svg'
-import img32 from '../../assets/32.svg'
-import img33 from '../../assets/33.svg'
+import img2 from '../../assets/2.svg'
+import img3 from '../../assets/3.svg'
 import img4 from '../../assets/4.svg'
+import img5 from '../../assets/5.svg'
 import img6 from '../../assets/6.svg'
+import img7 from '../../assets/7.svg'
+import img8 from '../../assets/8.svg'
+import img9 from '../../assets/9.svg'
+import img10 from '../../assets/10.svg'
 
 export default function usePegaImagem () {
 
     return (numero: number) => {
         switch (numero) {
-            case 22:
-              return img22;              
-            case 25:
-              return img25;              
-            case 27:
-              return img27;              
-            case 31:
-              return img31;              
-            case 32:
-              return img32;              
-            case 33:
-              return img33;              
+            case 2:
+              return img2;              
+            case 10:
+              return img10;              
+            case 3:
+              return img3;              
             case 4:
               return img4;              
+            case 5:
+              return img5;              
             case 6:
               return img6;              
+            case 7:
+              return img7;              
+            case 8:
+              return img8;              
+            case 9:
+              return img9;              
             default:
               return img4;
           }
