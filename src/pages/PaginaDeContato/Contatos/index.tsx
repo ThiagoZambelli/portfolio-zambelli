@@ -17,7 +17,7 @@ function Contatos() {
                 </div>
                 <div>
                     <SubTitulo texto='Resume' />
-                    <a download href={process.env.PUBLIC_URL +'/assets/Resume - Thiago Zambelli.pdf'}><AiOutlineDownload />Resume</a>
+                    <a download href={'public/assets/Resume - Thiago Zambelli.pdf'}><AiOutlineDownload />Resume</a>
                 </div>
                 <div>
                     <SubTitulo texto='Contacts' />
