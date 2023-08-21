@@ -22,7 +22,7 @@ function Contatos() {
                 <div>
                     <SubTitulo texto='Contacts' />
                     <p><strong><AiOutlineMail />Email:</strong> thiagozamoliveira@gmail.com</p>
-                    <p><strong><AiOutlinePhone />Phone Number:</strong>(52) 9 9590-4824</p>
+                    <p><strong><AiOutlinePhone />Phone Number:</strong>(51) 9 9590-4824</p>
                 </div>
             </div>
         </section>
