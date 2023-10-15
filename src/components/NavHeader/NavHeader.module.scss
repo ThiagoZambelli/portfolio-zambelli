@@ -56,8 +56,9 @@
         row-gap: 1rem;
         justify-content: center;
         max-width: 60%;
+        padding: 1rem;
 
-        img {
+        img {            
             width: 100px;
             animation: imgMovimento 4s linear infinite, piscar 4s linear infinite;
             
@@ -80,6 +81,16 @@
 
 }
 
+@media screen and (max-width: 660px) {
+    .navHeader{
+        h1{
+            p{
+                display: none;
+            }
+        }
+    }
+    
+}
 @media screen and (max-width: 860px) {
     .navHeader {
         height: 150px;
