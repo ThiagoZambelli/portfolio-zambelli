@@ -58,8 +58,9 @@
         max-width: 60%;
 
         img {
-            width: 70px;
-            border-radius: 50%;
+            width: 100px;
+            animation: imgMovimento 4s linear infinite, piscar 4s linear infinite;
+            
         }
 
         p {
@@ -111,5 +112,38 @@
             }
 
         }
+    }
+}
+@keyframes imgMovimento {
+    0% {
+        border-radius: 77% 23% 42% 58% / 55% 62% 38% 45% ;        
+    }
+
+    25%{
+        border-radius: 45% 55% 16% 84% / 61% 7% 93% 39% ;        
+    }
+    50% {
+        border-radius: 23% 77% 9% 91% / 51% 26% 74% 49% ;        
+    }
+
+    100% {
+        border-radius: 77% 23% 42% 58% / 55% 62% 38% 45% ;       
+    }
+}
+@keyframes piscar {
+    0% {        
+        box-shadow: 0 0 10px $colorSecundaria;
+        opacity: .8;
+    }
+
+    25%,
+    50% {        
+        box-shadow: 0 0 10px $colorSecundaria, 0 0 20px $colorSecundaria, 0 0 30px $colorSecundaria;
+        opacity: 1;
+    }
+
+    100% {
+        box-shadow: 0 0 10px $colorSecundaria;
+        opacity: .8;    
     }
 }
