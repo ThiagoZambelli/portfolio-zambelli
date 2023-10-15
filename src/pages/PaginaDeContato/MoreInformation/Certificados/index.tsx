@@ -22,10 +22,10 @@ function Certificados() {
             <SubTitulo texto='Certificates' />            
             <div className={styles.certificados__certificado}>
                 {certificados.length > 0 ? certificados.map(e => (
-                    <div key={e._id}>
+                    <section key={e._id}>
                         <h3>{e.nome}</h3>
                         <h4><LiaCertificateSolid /> {e.escola} - {e.horas}h</h4>
-                    </div>
+                    </section>
                 )) : <Loader />}
             </div>
         </section>
